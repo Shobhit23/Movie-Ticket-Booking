@@ -1,0 +1,24 @@
+<div class="card" style="width: 25rem;margin-top: 50px;margin-left: 35%;font-weight: bold;text-justify: auto;">
+    <h3 class="card-title" style="text-align: left;background-color: blue;padding: 10px;">Booking Summary</h3>
+    <div class="card-body">
+      <h6>Theater Name : {{bookingSummary.theaterName}}</h6>
+      &nbsp;  
+      <h6>Seats Booked : {{bookingSummary.seats}}</h6>
+      &nbsp;  
+      <h6>Movie Name : {{bookingSummary.MovieName}}</h6>
+      &nbsp;  
+      <h6>Price : {{bookingSummary.price | currency}}</h6>
+      &nbsp;  
+      <h6>Show Date : {{bookingSummary.ShowDate}}</h6>
+      &nbsp;  
+      <h6>Show Timing : {{bookingSummary.ShowTiming}}</h6>
+      &nbsp;
+      <div>
+      <button class="btn btn-primary" style="margin-left: 30px;" (click)="modify()">Modify Booking</button>
+      &nbsp;
+      <button class="btn btn-primary" (click)="checkout()">Confirm Booking</button>
+    </div>
+    </div>
+    </div>
+
+

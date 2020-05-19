@@ -1,0 +1,10 @@
+[
+    {"name":"Ram-leela","language":"Hindi","format":"2D/3D-a","rating":"4","img":"/assets/poster.jpg"},
+    {"name":"name-b","language":"language-b","format":"2D/3D-b","rating":"3","img":"/assets/poster.jpg"},
+    {"name":"name-c","language":"language-c","format":"2D/3D-c","rating":"2","img":"/assets/poster.jpg"},
+    {"name":"name-d","language":"language-d","format":"2D/3D-d","rating":"1","img":"/assets/poster.jpg"},
+    {"name":"name-c","language":"language-c","format":"2D/3D-c","rating":"3","img":"/assets/poster.jpg"},
+    {"name":"name-d","language":"language-d","format":"2D/3D-d","rating":"4","img":"/assets/poster.jpg"},
+    {"name":"name-c","language":"language-c","format":"2D/3D-c","rating":"1","img":"/assets/poster.jpg"},
+    {"name":"name-d","language":"language-d","format":"2D/3D-d","rating":"2","img":"/assets/poster.jpg"}
+]

@@ -1,0 +1,29 @@
+<div class="card" style="width: 80rem;margin-left: 40px;margin-top:0px;">
+    <div class="card-body">
+      
+      <div class="container">
+        <div class="row">
+          
+            <div class="col-6 col-sm-3" *ngFor="let movie of movieList;index as i">
+
+            <div class="card change-color" style="width: 18rem;margin-top: 0px;">
+                <img class="card-img-top" src={{movie.img}} alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">{{movie.name}}</h5>
+                  <h5 class="card-title" style="text-align: center;">{{movie.language}}</h5>
+                  <h5 class="card-title" style="text-align: center;">{{movie.rating}}</h5>
+                  <button class="btn btn-primary" style="margin-left: 40%;" (click)="book(i)">Book{{i}}</button>
+                </div>
+              </div>
+
+          </div>
+
+              
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  

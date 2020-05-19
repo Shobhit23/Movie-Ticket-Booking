@@ -1,0 +1,34 @@
+<div class="container" style="margin-left: 300px;">
+  <div class="row">
+    
+
+<div class="col-6 col-sm-4">
+
+    <div class="card" style="width: 18rem;margin-top: 50px;">
+        <img class="card-img-top" src="{{movie.img}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Movie Name:{{movie.name}}</h5>
+          <h5 class="card-title" style="text-align: center;">Language:{{movie.language}}</h5>
+          <h5 class="card-title" style="text-align: center;">Format:{{movie.format}}</h5>
+          <h5 class="card-title" style="text-align: center;">{{movie.rating}}</h5>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="col-6 col-sm-4">
+
+      <div class="card" style="width: 20rem;margin-top: 50px;">
+        <h4 class="card-title" style="text-align: left;background-color: blue;padding: 10px;">Booking Details</h4>
+        <div class="card-body">
+          <h5>Select your Theater:</h5>
+          <a *ngFor="let theater of theatreList;index as in" (click)="select(in)" style="cursor:pointer"><u>{{theater.name}}</u><br></a>
+          &nbsp;  
+          <app-selected-theater [index]="in" [MovieName]="movieName" [price]="price" *ngIf="selected"></app-selected-theater>
+          </div>
+        </div>
+
+  </div>
+
+  </div>
+  </div>

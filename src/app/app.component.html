@@ -1,0 +1,7 @@
+<script type="text/javascript" >
+    function preventBack(){window.history.forward();}
+     setTimeout("preventBack()", 0);
+     window.onunload=function(){null};
+ </script>
+<app-navbar></app-navbar>
+<router-outlet (deactivate)="onRouterOutletActivate($event)"></router-outlet>

@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" (click)="goToHome()" style="padding: 20px;cursor: pointer;">Movie Ticket Booking</a>
+  
+    <!-- Links -->
+    <a class="navbar-brand" *ngIf="username">Welcome {{username}}</a>
+    <button (click)="login()" class="btn btn-primary" *ngIf="!username">Login</button>
+    <button (click)="logout()" class="btn btn-primary" *ngIf="username">Logout</button>
+    
+  </nav>
